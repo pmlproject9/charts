@@ -3,11 +3,21 @@ entries:
   hamanager-source:
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2020-06-19T14:09:44.330069087+08:00"
+    created: "2020-06-19T14:19:17.909193475+08:00"
     description: A Helm chart for Kubernetes
     digest: eb08c5ac8c4b1efb5745b9c6d1d624b6346de67d75cc7565160bd33e9c6ecb1e
     name: hamanager-source
     urls:
     - https://mattiaperi.github.io/helm-chart/hamanager-source-0.1.0.tgz
     version: 0.1.0
-generated: "2020-06-19T14:09:44.32961783+08:00"
+  hascheduller:
+  - apiVersion: v1
+    appVersion: "1.0"
+    created: "2020-06-19T14:19:17.909363686+08:00"
+    description: A Helm chart for Kubernetes
+    digest: 54069fd5f74d63a3555c7b8b092318f8b2092cc5a1b7a1bb158075e2070f9cfe
+    name: hascheduller
+    urls:
+    - https://mattiaperi.github.io/helm-chart/hascheduller-0.1.0.tgz
+    version: 0.1.0
+generated: "2020-06-19T14:19:17.908882158+08:00"
