@@ -16,9 +16,12 @@ spec:
         app.kubernetes.io/name: controllermanager
     spec:
     containers:
-      - name:controllermanager
-        image: "{{ .Values.image.controllermanager.repository }}:{{ .Values.image.controllermanager.tag }}"
-        imagePullPolicy: IfNotPresent
+      - command:
+          - /manager
+        args:
+          - --enable-leader-election
+        image: "{{ .Values.image.hascheduller.repository }}:{{ .Values.image.hascheduller.tag }}"
+        name: controllermanager
         ports:
           - name: http
             containerPort: 8080
@@ -32,7 +35,12 @@ spec:
             path: /healthz
             port: http
         resources:
-          {{- toYaml .Values.resources | nindent 12 }}
+          limits:
+            cpu: 100m
+            memory: 30Mi
+          requests:
+            cpu: 100m
+            memory: 20Mi
     {{- with .Values.nodeSelector }}
     nodeSelector:
       {{- toYaml . | nindent 8 }}

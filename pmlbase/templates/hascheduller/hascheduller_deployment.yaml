@@ -16,7 +16,7 @@ spec:
         app.kubernetes.io/name: hascheduller
     spec:
       containers:
-        - name:hascheduller
+        - name: hascheduller
           image: "{{ .Values.image.hascheduller.repository }}:{{ .Values.image.hascheduller.tag }}"
           imagePullPolicy: IfNotPresent
           ports:
