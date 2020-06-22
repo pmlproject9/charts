@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: hascheduller
-  namespace: pml
+  namespace: {{ .Release.Namespace }}
   labels:
     app: hascheduller
 spec:
