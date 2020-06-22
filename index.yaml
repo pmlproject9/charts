@@ -3,11 +3,11 @@ entries:
   pmlbase:
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2020-06-22T16:23:29.402230278+08:00"
+    created: "2020-06-22T16:56:27.894788836+08:00"
     description: pml base for ha
-    digest: dc7101852e601f9ff5ed533cda64c4331863e07d706206b78a6309d6dd1113c9
+    digest: e8e88e285b87eaafdaabeb3283ea9d3ab20a00b44cd98452841da1b57d36435b
     name: pmlbase
     urls:
     - https://pmlproject9.github.io/charts/pmlbase-0.1.0.tgz
     version: 0.1.0
-generated: "2020-06-22T16:23:29.401656727+08:00"
+generated: "2020-06-22T16:56:27.894135055+08:00"
