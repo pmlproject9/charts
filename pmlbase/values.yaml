@@ -5,7 +5,7 @@
 image:
   hascheduller:
     repository: lmxia/hascheduller
-    tag: v1
+    tag: v1.1
     pullPolicy: IfNotPresent
   controllermanager:
     repository: lmxia/controllermanager
