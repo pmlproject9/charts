@@ -9,7 +9,7 @@ image:
     pullPolicy: IfNotPresent
   controllermanager:
     repository: lmxia/controllermanager
-    tag: v1
+    tag: v1.1
     pullPolicy: IfNotPresent
 
 imagePullSecrets: []
